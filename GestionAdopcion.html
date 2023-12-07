@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/styleGestionMascotas.css">
+    <link rel="stylesheet" href="./css/styleGestionAdopcion.css">
     <title>GESTIONAR MASCOTAS</title>
 </head>
 
@@ -183,48 +183,80 @@
     </footer>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="">
-                        <h3>REGISTRO DE MASCOTAS</h3>
-                    </div>
-                    <form>
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Nombre Mascotas</label>
-                                <input type="text" class="form-control">
-                                <label>Fecha de Nacimiento</label>
-                                <input type="Date" class="form-control">
-                                <label>Edad</label>
-                                <input type="text" class="form-control">
-                                <label>Tamaño</label>
-                                <input type="number" class="form-control">
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div>
+                    <h3>REGISTRO DE MASCOTAS EN ADOPCION</h3>
+                </div>
+                <form>
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="fechaNacimiento" class="form-label">Nombre Mascota</label>
+                                <input type="text" class="form-control" id="nombreMascota">
                             </div>
-                            <div class="col-6">
-                                <label>Peso</label>
-                                <input type="text" class="form-control">
-                                <label>Color</label>
-                                <input type="email" class="form-control">
-                                <label>Sexo</label>
-                                <input type="text" class="form-control">
-                                <label>Especie</label>
-                                <input type="text" class="form-control">
-                                <label style="text-align: center;">Raza</label>
-                                <input type="text" style="text-align:center;" class="form-control">
-                                
+                            <div class="mb-3">
+                                <label for="tamaño" class="form-label">Tamaño</label>
+                                <input type="number" class="form-control" id="tamañoNascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sexo" class="form-label">Sexo</label>
+                                <input type="text" class="form-control" id="sexoMascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="energia" class="form-label">Energia</label>
+                                <input type="text" class="form-control" id="energiaMascota">
                             </div>
                         </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Agregar</button>
-                    </form>
-                </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="nombreMascota" class="form-label">Fecha de Nacimiento</label>
+                                <input type="Date" class="form-control" id="fechaNacimiento">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">peso</label>
+                                <input type="number" class="form-control" id="edad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="especie" class="form-label">Especie</label>
+                                <input type="text" class="form-control" id="especie">
+                            </div>
+                            <div class="mb-3">
+                                <label for="caracter" class="form-label">Caracter</label>
+                                <input type="text" class="form-control" id="caracterMascota">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label for="edadMascota" class="form-label">edad</label>
+                                <input type="number" class="form-control" id="edadMascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="color" class="form-label">Color</label>
+                                <input type="text" class="form-control" id="color">
+                            </div>
+                            <div class="mb-3">
+                                <label for="raza" class="form-label">Raza</label>
+                                <input type="text" class="form-control" id="rasaMascota">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sexo" class="form-label">Imagen Mascota</label>
+                                <input type="file" class="form-control" id="imagenMascota">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Agregar</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
 </body>
 
 </html>
