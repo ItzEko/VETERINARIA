@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* que el html ocupe el 100% de nuestro espacio en la pantalla */
+html{
+    height: 100%;
+}
+body{
+    background-color: #F2F3F3;
+    /* para que ocupe el 100% */
+    min-height: 100%;
+    /* damos un margen a la izquierda */
+    margin-left: 1.25rem;
+}
+.grid-container >*{
+    height: 100%;
+    padding: 0.625rem;
+    text-align: left;
+}
+/* comenzamos dandole las dimensiones en el layout de GRID */
+.grid-container{
+    display: grid;
+    gap:0.625rem;  /*separacion entre los elementos del body */
+    /* ponemos las areas que queremos en el grid sus secciones,damos la estructura que queremos que se acomoden */
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar navbar"
+    "sidebar main"
+    "footer  footer";
+    /* damos el tamaño de la primera columna y la otra la dejamos en auto 
+    estas son el sidebar y el main por que son columnas */
+    grid-template-columns: 18.75rem auto;
+    /* ahora vamos a darle tamaño a las filas, primera fila que es el header,segunda sidebar y main
+    tercera el footer */
+    grid-template-rows: 6.25rem 6.25rem auto 1.25rem;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header .pages {
+    margin-top:15px;
+    font-family: 'Inter', sans-serif;
+    display: block;
+    margin-left: 0.938rem;
+}
+.header .icons{
+    font-size: 2.5rem;
+    margin-right: 1.875rem;
+}
+.navbar{
+    grid-area: navbar;
+}
+.navbar .users{
+    display: flex;
+    border-radius: 1.875rem;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 70px;
+}
+.navbar .icon{
+    background-color: #C600F8;
+    width: 40px;
+    height:50px;
+    margin-left: 10px;
+    margin-top: 7px;
+    border-radius: 0.9375rem;
+    background: linear-gradient(143deg, #FD0499 11.29%, rgba(179, 0, 250, 0.71) 64.44%, rgba(97, 0, 255, 0.62) 103.23%);  
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    
+}
+.navbar i{
+    margin-left: 2px;
+    font-size: 2.25rem;
+}
+.navbar .cant p{
+    text-align: center;
+    margin-top: 10px;
+}
+.navbar .cant h3{
+    text-align: center;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row; /* Asegúrate de que la orientación sea "row" */
+    margin-left: 30px;
+}
+.main .perfil{
+    width: 21.6875rem;
+    height: 23.9375rem;
+    margin-left: 60px;
+    border-radius: 2.5rem;
+    background: #FFF;
+    box-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.main .perfil .logo{
+    width: 14.375rem;
+    height: 14.375rem;
+    flex-shrink: 0;
+    fill: #F2F3F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 180px;
+    
+}
+.main .perfil .logo img{
+    width: 11.875rem;
+    height: 11.875rem;
+    border-radius: 11.875rem;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.sidebar{
+    grid-area: sidebar;
+    display: block;
+}
+.sidebar h2{
+    margin-top: 1.875rem;
+    color: #B61E2D;
+    text-align: center;
+    font-family: 'Mogra', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* altura de línea a 1 para reducir el espacio entre líneas */
+    border-bottom: 1px solid gray; /* línea debajo del texto */
+    margin-bottom:0.313rem; 
+}
+.sidebar .userside {
+    display: flex;
+    margin-top: 2.5rem;
+    border-radius: 0.625rem;
+    background: #FAFBFF;
+    box-shadow: 0px 2px 2px 0px rgba(207, 207, 209, 0.45);
+    width: 13.4375rem;
+    height: 3.0625rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .userside .cube .bi-person {
+    font-size: 1.25rem;
+    margin-left:0.313rem;
+}
+.sidebar .userside .cube {
+    background: #C600F8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius:0.625rem;
+    height:1.875rem;
+    width:1.875rem;
+}
+
+.sidebar .userside p {
+    font-size:17px; /* Tamaño de fuente más pequeño para el texto */
+    margin-left: 30px;
+    margin-top: 13px;
+    font-family: 'Inter', sans-serif;
+}
+.sidebar .registros {
+    display: flex;
+    flex-direction: column;
+    /* Otros estilos según sea necesario */
+}
+
+.sidebar .registros a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center; /* Alinea el texto e ícono verticalmente en el enlace */
+}
+.footer{
+    grid-area: footer;
+}
