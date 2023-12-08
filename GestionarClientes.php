@@ -10,7 +10,6 @@
 <body class="grid-container">
     <!--se agrega como grid container por la clase de maquetado que se esta realizando -->
     <header class="header">
-
         <?php require_once 'view/header.php' ?>
     </header>
     <nav class="navbar">
@@ -25,51 +24,7 @@
         </button>
     </nav>
     <aside class="sidebar">
-        <h2>Beraca</h2>
-        <div class="userside">
-            <div class="cube">
-                <i class="bi bi-person"></i>
-            </div>
-            <p>Dashboard</p>
-        </div>
-        <div class="registros">
-            <p>---REGISTROS---</p>
-            <form>
-                <a href="./GestionarClientes.html">
-                    <i class="bi bi-pencil-square"></i>Gestionar Clientes
-                </a>
-                <a href="./GestionarMascota.html">
-                    <i class=" bi bi-gear"></i>
-                    Gestionar Mascotas
-                </a>
-                <a href="#">
-                    <i class="bi bi-calendar2-heart"></i>
-                    Gestionar Consultas
-                </a>
-                <a href="#">
-                    <i class="bi bi-calendar-check"></i>
-                    Gestionar Citas
-                </a>
-                <a type="submit" href="#">
-                    <i class="bi bi-journal-bookmark"></i>
-                    Gestionar Agenda
-                </a>
-                <a href="#">
-                    <i class="bi bi-chat-heart"></i>
-                    Gestionar Mensajes
-                </a>
-                <p>---BUSQUEDA---</p>
-                <a href="#">
-                    <i class="bi bi-search-heart"></i>
-                    Busqueda Adopción
-                </a>
-                <p>---OTROS---</p>
-                <a href="#">
-                    <i class="bi bi-mortarboard"></i>
-                    ¿Sabías Qué?
-                </a>
-            </form>
-        </div>
+        <?php require_once './view/sidebar.php'?>
     </aside>
     <article class="main">
         <table>
@@ -208,7 +163,9 @@
             </div>
         </div>
     </div>
-
+    <div class="container">
+            <div id="mitabla"></div>
+    </div>
 
 
 
