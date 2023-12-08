@@ -21,6 +21,9 @@ $sql = "CREATE TABLE veterinario (
     Cp TEXT NOT NULL
 )";
 
+//$sql = "ALTER TABLE veterinario
+//ADD COLUMN Contraseña VARCHAR(255) NOT NULL;
+//";
 
 $conexion = conexionBD();
 
