@@ -28,16 +28,16 @@
                 <div class="circulo"></div>
                 <h1>BERACA</h1>
             </div>
-            <form action="" class="fomulario">
+            <form action="" class="fomulario" id="formulario">
                 <div class="correo_usuario">
                     <label for="">Correo u Usuario</label>
                     <br>
-                    <input type="text">
+                    <input type="text" id="correo" name="correo">
                 </div>
                 <div class="contrasena">
                     <label for="">Contraseña</label>
                     <br>
-                    <input type="password">
+                    <input type="password" id="contra" name="contra">
                 </div>
                 <div class="btnLogin">
                     <button type="submit">ENTRAR</button>
@@ -46,5 +46,4 @@
         </div>
     </section>
 </body>
-
 </html>

@@ -30,13 +30,11 @@ body {
     height: auto;
     border-radius: 50%;
 }
-
 .login-fondo {
     text-align: center;
     z-index: 1;
     height: 60vh; /* Uso de unidades de vista de altura (viewport height) */
 }
-
 .login-fondo-inicio {
     position: relative;
     left: 40%;
@@ -45,12 +43,11 @@ body {
     width: 70%; /* Ajusta el tamaño según tus necesidades */
     transform: translate(-50%, -50%);
 }
-
 .login-fondo-inicio img {
     position: absolute;
     max-width: 100%;
+    border-radius: 10%;
 }
-
 .login-formulario {
     position: fixed;
     text-align: center;
