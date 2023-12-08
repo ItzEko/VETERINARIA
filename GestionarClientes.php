@@ -66,7 +66,7 @@
                 <div class="modal-body">
                     <div class="margen">
                         <h3>Registrar Cliente</h3>
-                        <form> 
+                        <form id="registroClientes"> 
                             <div class="row">
                                 <div class="col-6">
                                     <label>Nombre</label>
