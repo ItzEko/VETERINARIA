@@ -11,7 +11,6 @@
             <p>---REGISTROS---</p>
             <form>
                 <a href="../GestionarClientes.php"> 
-                <a href="./GestionarClientes.php"> 
 
                         <i class="bi bi-pencil-square"></i>Gestionar Clientes
                 </a>
