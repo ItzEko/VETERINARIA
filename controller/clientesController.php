@@ -1,7 +1,7 @@
 <?php
 $nombre = $_POST['nombre'];
 $cel = $_POST['cel'];
-$nombre = $_POST['localidad'];
+$localidad = $_POST['localidad'];
 $colonia = $_POST['colonia'];
 $apellidos = $_POST['apellidos'];
 $correo = $_POST['correo'];
