@@ -41,8 +41,9 @@ body {
     position: relative;
     left: 40%;
     margin-top: -60%;
-    left: -70%;
+    left: -10%;
     width: 70%; /* Ajusta el tamaño según tus necesidades */
+    transform: translate(-50%, -50%);
 }
 
 .login-fondo-inicio img {
@@ -54,16 +55,60 @@ body {
     position: fixed;
     text-align: center;
     z-index: 3;
-    border: 2px solid brown;
-    background-color: rgba(203, 8, 221, 0.5);
+    border: 2px none;
+    background-color: rgba(55, 33, 248, 0.397);
     padding: 20px;
     box-sizing: border-box;
     max-width: 400px;
     width: 100%;
-    height: 400px;
+    height: 500px;
     top: 50%;
     left: 66%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
+    border-radius: 15px ;
+}
+.circulo{
+    position: relative;
+    width: 50px; /* Ajusta el tamaño del círculo según tus necesidades */
+    height: 50px; /* Ajusta el tamaño del círculo según tus necesidades */
+    background-color: rgba(255, 0, 0, 0.5); /* Rojo con 50% de transparencia */
+    border-radius: 50%;
+    text-align: center;
+    left: 44%;
+}
+.h1-formulario h1{
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    color: rgb(211, 20, 20);
+}
+
+.fomulario label{
+   position: relative;
+   color: aliceblue;
+   margin-bottom: 10px;
+   margin: 10px;
+}
+
+.fomulario input {
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
 }
 
 
+.btnLogin button {
+    background-color: red; /* Cambia el color del fondo a rojo */
+    color: white; /* Cambia el color del texto a blanco */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnLogin button:hover{
+    background-color: darkred; /* Cambia el color del fondo cuando el mouse está sobre el botón */
+}
