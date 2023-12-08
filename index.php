@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-<?php require_once './assets/library/librerias.php' ?>
-<link rel="stylesheet" href="./css/styles.css">
+<head>
+    <?php require_once'./assets/library/librerias.php'?>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>GESTIONAR MASCOTAS</title>
+</head>
 </header>
 
 <body class="grid-container">
