@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <?php require_once './assets/library/librerias.php'?>
+=======
+    <?php require_once 'assets/library/librerias.php' ?>
+>>>>>>> b0bf14af91bbadc2fde9918f2d7e00750c312a7e
     <link rel="stylesheet" href="./css/clientesStyle.css">
     <title>GESTIONAR CLIENTES</title>
 </head>
@@ -11,15 +15,7 @@
     <!--se agrega como grid container por la clase de maquetado que se esta realizando -->
     <header class="header">
 
-        <div class="pages">
-            <h3>Páginas/Gestionar Clientes</h3>
-            <h2>Gestionar Clientes</h2>
-        </div>
-        <div class="icons">
-            <i class="bi bi-person"></i>
-            <i class="bi bi-gear"></i>
-            <i class="bi bi-bell"></i>
-        </div>
+        <?php require_once 'view/header.php' ?>
     </header>
     <nav class="navbar">
         <div class="search-bar">
