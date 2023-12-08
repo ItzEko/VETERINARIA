@@ -122,10 +122,13 @@ body{
     margin-left: 20px;
     margin-top: 20px;
 }
-.sidebar{
+.sidebar a{
     grid-area: sidebar;
     display: block;
+    text-decoration: none;
+    color: black;
 }
+
 .sidebar h2{
     margin-top: 1.875rem;
     color: #B61E2D;
@@ -182,6 +185,7 @@ body{
     display: flex;
     align-items: center; /* Alinea el texto e ícono verticalmente en el enlace */
 }
+
 .footer{
     grid-area: footer;
 }

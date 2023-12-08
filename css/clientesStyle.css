@@ -201,6 +201,8 @@ body{
     display: flex;
     align-items: center; /* Alinea el texto e ícono verticalmente en el enlace */
 }
+.modal{
+}
 .footer{
     grid-area: footer;
 }
