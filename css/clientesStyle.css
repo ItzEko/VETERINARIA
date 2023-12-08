@@ -127,6 +127,7 @@ body{
     border: none; 
     text-align: left;
     padding: 10px;
+    border: none;
 }
 
 .main .green{
@@ -206,6 +207,7 @@ body{
     color: #bb414d;
     width: 600px;
 }
+
 .modal-content input{
     width: 200px;
     margin-left: 40px;
@@ -232,6 +234,17 @@ body{
     margin: 0 auto; /* Esto centra los botones horizontalmente */
     display: block; /* Asegura que cada botón esté en una línea separada */
   }
+
+  /* MODAL DE ELIMINAR */
+.modal-body .margen01{
+    border: 1px solid rgb(214, 79, 79);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.modal-body .margen01 p{
+    margin-top: 20px;
+    color: black;
+}
 .footer{
     grid-area: footer;
 }

@@ -109,8 +109,13 @@
                     <td>Rivera Santiago</td>
                     <td>San Diego</td>
                     <td>73049</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#editarCliente">
+                            <i class="bi bi-pencil-square"></i>
+                        </button></td>
+                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#Eliminar">
+                            <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -118,8 +123,13 @@
                     <td>Guzman Tellez</td>
                     <td>Tlapacoyan</td>
                     <td>00000</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#editarCliente">
+                            <i class="bi bi-pencil-square"></i>
+                        </button></td>
+                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#Eliminar">
+                            <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -127,8 +137,13 @@
                     <td>Lopez Perez</td>
                     <td>Los naranjos</td>
                     <td>0000</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#editarCliente">
+                            <i class="bi bi-pencil-square"></i>
+                        </button></td>
+                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#Eliminar">
+                            <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -136,8 +151,13 @@
                     <td>Rivera Santiago</td>
                     <td>San Diego</td>
                     <td>73049</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#editarCliente">
+                            <i class="bi bi-pencil-square"></i>
+                        </button></td>
+                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#Eliminar">
+                            <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -145,8 +165,13 @@
                     <td>Guzman Tellez</td>
                     <td>Tlapacoyan</td>
                     <td>00000</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                        data-bs-target="#editarCliente">
+                        <i class="bi bi-pencil-square"></i>
+                    </button></td>
+                <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                        data-bs-target="#Eliminar">
+                        <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -154,8 +179,13 @@
                     <td>Lopez Perez</td>
                     <td>Los naranjos</td>
                     <td>0000</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#editarCliente">
+                            <i class="bi bi-pencil-square"></i>
+                        </button></td>
+                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#Eliminar">
+                            <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <tr>
                     <td>7</td>
@@ -163,8 +193,13 @@
                     <td>Lopez Perez</td>
                     <td>Los naranjos</td>
                     <td>0000</td>
-                    <td class="green"><i class="bi bi-pencil-square"></i></td>
-                    <td class="red"><i class="bi bi-trash"></i></td>
+                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#editarCliente">
+                            <i class="bi bi-pencil-square"></i>
+                        </button></td>
+                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
+                            data-bs-target="#Eliminar">
+                            <i class="bi bi-trash"></i></button> </td>
                 </tr>
                 <!-- Repite las filas según sea necesario -->
             </tbody>
@@ -174,19 +209,35 @@
         <p>pethealt.org</p>
     </footer>
 
+    <!-- Modal Eliminar Registro -->
+    <div class="modal fade" id="Eliminar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="margen01">
+                        <h5 class="modal-title" id="exampleModalLabel">Eliminar Registro</h5>
+                        <p>¿Estás seguro de que quieres eliminar este Registro?</p>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-
-    <!-- Modal -->
+    <!-- Modal Registrar Clientes-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="margen">
-                            <h3>Registrar Cliente</h3>
+                        <h3>Registrar Cliente</h3>
                         <form>
                             <div class="row">
                                 <div class="col-6">
@@ -222,6 +273,50 @@
         </div>
     </div>
     </div>
+    <!-- Modal Editar Clientes-->
+    <div class="modal fade" id="editarCliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="margen">
+                        <h3>Editar Cliente</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control">
+                                    <label>Telefono</label>
+                                    <input type="number" class="form-control">
+                                    <label>Localidad</label>
+                                    <input type="text" class="form-control">
+                                    <label>Colonia</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <label>Apellidos</label>
+                                    <input type="text" class="form-control">
+                                    <label>Correo</label>
+                                    <input type="email" class="form-control">
+                                    <label>Calle</label>
+                                    <input type="text" class="form-control">
+                                    <label>CP</label>
+                                    <input type="number" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Actualizar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 
