@@ -104,7 +104,7 @@ body{
     flex-direction: row; /* Asegúrate de que la orientación sea "row" */
     margin-left: 30px;
 }
-.main table {
+/* .main table {
     border-collapse: collapse;
     width: 100%;
     width: 53.375rem;
@@ -141,7 +141,7 @@ body{
     background: #FB0000;
     width: 2.5625rem;
     height: 3.125rem;
-}
+} */
 .sidebar{
     grid-area: sidebar;
     display: block;
