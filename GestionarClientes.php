@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
+    <?php require_once './assets/library/librerias.php'?>
+=======
     <?php require_once 'assets/library/librerias.php' ?>
+>>>>>>> b0bf14af91bbadc2fde9918f2d7e00750c312a7e
     <link rel="stylesheet" href="./css/clientesStyle.css">
     <title>GESTIONAR CLIENTES</title>
 </head>
