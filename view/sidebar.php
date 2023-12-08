@@ -10,18 +10,18 @@
         <div class="registros">
             <p>---REGISTROS---</p>
             <form>
-                <a href="./GestionarClientes.html"> 
+                <a href="../GestionarClientes.php"> 
                         <i class="bi bi-pencil-square"></i>Gestionar Clientes
                 </a>
-                <a href="./GestionarMascota.html">
+                <a href="../GestionarMascota.php">
                     <i class=" bi bi-gear"></i>
                     Gestionar Mascotas
                 </a>
-                <a href="#">
+                <a href="../GestionarConsultas.php">
                     <i class="bi bi-calendar2-heart"></i>
                     Gestionar Consultas
                 </a>
-                <a  href="#">
+                <a  href="../GestionarCitas.php">
                     <i class="bi bi-calendar-check"></i>
                     Gestionar Citas
                 </a>
