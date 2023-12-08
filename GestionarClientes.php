@@ -18,7 +18,7 @@
                 <i class="bi bi-search"></i>
             </span>
             <!-- INPUT DE BUSQUEDA EN TIEMPO REAL -->
-            <input type="text" class="search-input" placeholder="Buscar...">
+            <input type="text" name="nombre" id="buscar" onkeyup="buscarUsuarios()" class="search-input">
         </div>
         <button type="button" class="add-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Agregar Clientes
@@ -108,35 +108,36 @@
                 <div class="modal-body">
                     <div class="margen">
                         <h3>Editar Cliente</h3>
-                        <form>
+                        <form id="#registro_act">
                             <div class="row">
-                                <div class="col-6">
+                            <div class="col-6">
+                                    <input type="hidden" name="id" id="id">
                                     <label>Nombre</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="nombre1" id="nombre1">
                                     <label>Telefono</label>
-                                    <input type="number" class="form-control">
+                                    <input type="number" class="form-control" name="cel1" id="cel1">
                                     <label>Localidad</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="localidad1" id="localidad1">
                                     <label>Colonia</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="colonia1" id="colonia1">
                                 </div>
                                 <div class="col-6">
                                     <label>Apellidos</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="apellidos1" id="apellidos1">
                                     <label>Correo</label>
-                                    <input type="email" class="form-control">
+                                    <input type="email" class="form-control" name="correo1" id="correo1">
                                     <label>Calle</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="calle1" id="calle1"> 
                                     <label>CP</label>
-                                    <input type="number" class="form-control">
+                                    <input type="number" class="form-control" name="CP1" id="CP1">
                                 </div>
                             </div>
-
+                            </form>
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-success">Actualizar</button>
-                        </form>
+                                <button type="button" class="btn btn-success" id="btnaact">Actualizar</button>
+                        
                     </div>
                 </div>
             </div>
