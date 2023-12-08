@@ -11,7 +11,7 @@ function validarCredenciales($username, $password) {
     global $conn;
 
     // Evitar inyección SQL usando consultas preparadas
-    $stmt = $conn->prepare("SELECT * FROM veterinario WHERE correo  = ? AND password = ?");
+    $stmt = $conn->prepare("SELECT * FROM veterinario WHERE correo  = ? AND contraseña = ?");
     $stmt->bind_param("ss", $username, $password);
 
     // Ejecutar la consulta
@@ -35,11 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (validarCredenciales($username, $password)) {
         // Credenciales válidas, redirigir a la página principal o realizar otras acciones
-        header("Location: home.php");
+        header("Location: ../index.php?inicio=1");
         exit();
     } else {
         // Credenciales inválidas, redirigir al formulario de inicio de sesión con un mensaje de error
-        header("Location: index.php?error=1");
+        header("Location:../login.php?error=1");
+        
         exit();
     }
 }

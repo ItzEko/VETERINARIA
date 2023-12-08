@@ -28,7 +28,7 @@
                 <div class="circulo"></div>
                 <h1>BERACA</h1>
             </div>
-            <form action="" class="fomulario" id="formulario">
+            <form action="controller/loginController.php" method="post" class="fomulario" id="formulario">
                 <div class="correo_usuario">
                     <label for="">Correo u Usuario</label>
                     <br>
