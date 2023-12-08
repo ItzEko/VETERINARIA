@@ -2,11 +2,8 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
-    <?php require_once './assets/library/librerias.php'?>
-=======
     <?php require_once 'assets/library/librerias.php' ?>
->>>>>>> b0bf14af91bbadc2fde9918f2d7e00750c312a7e
+
     <link rel="stylesheet" href="./css/clientesStyle.css">
     <title>GESTIONAR CLIENTES</title>
 </head>
@@ -28,124 +25,15 @@
         </button>
     </nav>
     <aside class="sidebar">
-        <?php require_once './view/sidebar.php'?>
+        <?php require_once './view/sidebar.php' ?>
     </aside>
     <article class="main">
-        <table>
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Localidad</th>
-                    <th>CP</th>
-                    <th colspan="2">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Filas y celdas -->
-                <tr>
-                    <td>1</td>
-                    <td>Moises</td>
-                    <td>Rivera Santiago</td>
-                    <td>San Diego</td>
-                    <td>73049</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#editarCliente">
-                            <i class="bi bi-pencil-square"></i>
-                        </button></td>
-                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#Eliminar">
-                            <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Itzel</td>
-                    <td>Guzman Tellez</td>
-                    <td>Tlapacoyan</td>
-                    <td>00000</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#editarCliente">
-                            <i class="bi bi-pencil-square"></i>
-                        </button></td>
-                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#Eliminar">
-                            <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ana</td>
-                    <td>Lopez Perez</td>
-                    <td>Los naranjos</td>
-                    <td>0000</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#editarCliente">
-                            <i class="bi bi-pencil-square"></i>
-                        </button></td>
-                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#Eliminar">
-                            <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Moises</td>
-                    <td>Rivera Santiago</td>
-                    <td>San Diego</td>
-                    <td>73049</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#editarCliente">
-                            <i class="bi bi-pencil-square"></i>
-                        </button></td>
-                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#Eliminar">
-                            <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Itzel</td>
-                    <td>Guzman Tellez</td>
-                    <td>Tlapacoyan</td>
-                    <td>00000</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                        data-bs-target="#editarCliente">
-                        <i class="bi bi-pencil-square"></i>
-                    </button></td>
-                <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                        data-bs-target="#Eliminar">
-                        <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Ana</td>
-                    <td>Lopez Perez</td>
-                    <td>Los naranjos</td>
-                    <td>0000</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#editarCliente">
-                            <i class="bi bi-pencil-square"></i>
-                        </button></td>
-                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#Eliminar">
-                            <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Ana</td>
-                    <td>Lopez Perez</td>
-                    <td>Los naranjos</td>
-                    <td>0000</td>
-                    <td><button class="green" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#editarCliente">
-                            <i class="bi bi-pencil-square"></i>
-                        </button></td>
-                    <td><button class="red" type="button" class="add-button" data-bs-toggle="modal"
-                            data-bs-target="#Eliminar">
-                            <i class="bi bi-trash"></i></button> </td>
-                </tr>
-                <!-- Repite las filas según sea necesario -->
-            </tbody>
-        </table>
+        <div class="container">
+            <div id="mitabla"></div>
+        </div>
     </article>
+
+
     <footer class="footer">
         <p>pethealt.org</p>
     </footer>
@@ -167,41 +55,38 @@
             </div>
         </div>
     </div>
-    <div class="container">
-            <div id="mitabla"></div>
-    </div>
+
 
 
 
     <!-- Modal Registrar Clientes-->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="margen">
                         <h3>Registrar Cliente</h3>
-                        <form>
+                        <form> 
                             <div class="row">
                                 <div class="col-6">
                                     <label>Nombre</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="nombre" id="nombre">
                                     <label>Telefono</label>
-                                    <input type="number" class="form-control">
+                                    <input type="number" class="form-control" name="cel" id="cel">
                                     <label>Localidad</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="localidad" id="localidad">
                                     <label>Colonia</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="colonia" id="colonia">
                                 </div>
                                 <div class="col-6">
                                     <label>Apellidos</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="apellidos" id="apellidos">
                                     <label>Correo</label>
-                                    <input type="email" class="form-control">
+                                    <input type="email" class="form-control" name="correo" id="correo">
                                     <label>Calle</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" name="calle" id="calle"> 
                                     <label>CP</label>
-                                    <input type="number" class="form-control">
+                                    <input type="number" class="form-control" name="CP" id="CP">
                                 </div>
                             </div>
 
@@ -217,8 +102,7 @@
     </div>
     </div>
     <!-- Modal Editar Clientes-->
-    <div class="modal fade" id="editarCliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="editarCliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
