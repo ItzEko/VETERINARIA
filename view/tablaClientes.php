@@ -6,7 +6,7 @@ $resu = mysqli_query($conexion, $sql);
 ?>
 
 
-<table>
+<table class="table table-hover">
     <thead>
         <tr>
             <th>id</th>
