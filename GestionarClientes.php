@@ -108,7 +108,7 @@
                 <div class="modal-body">
                     <div class="margen">
                         <h3>Editar Cliente</h3>
-                        <form id="#registro_act">
+                        <form id="registro_act">
                             <div class="row">
                             <div class="col-6">
                                     <input type="hidden" name="id" id="id">
