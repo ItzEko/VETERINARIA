@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#mitabla").load("../view/tablaClientes.php");
+  $("#mitabla").load("view/tablaClientes.php");
   $("#btnagregar").click(function () {
     datos = $("#registroClientes").serialize();
 
@@ -10,7 +10,7 @@ $(document).ready(function () {
       success: function (r) {
         if (r == 1) {
           $("#registroClientes")[0].reset();
-          $("#mitabla").load("../view/tabla.php");
+          $("#mitabla").load("view/tablaClientes.php");
 
           alertify.success("Agregado con exito");
         } else {

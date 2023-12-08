@@ -3,7 +3,6 @@
 
 <head>
     <?php require_once 'assets/library/librerias.php' ?>
-
     <link rel="stylesheet" href="./css/clientesStyle.css">
     <title>GESTIONAR CLIENTES</title>
 </head>
@@ -18,6 +17,7 @@
             <span class="search-icon">
                 <i class="bi bi-search"></i>
             </span>
+            <!-- INPUT DE BUSQUEDA EN TIEMPO REAL -->
             <input type="text" class="search-input" placeholder="Buscar...">
         </div>
         <button type="button" class="add-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -89,12 +89,12 @@
                                     <input type="number" class="form-control" name="CP" id="CP">
                                 </div>
                             </div>
-
+                            </form>
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                                 <button type="button" id="btnagregar" class="btn btn-success">Agregar</button>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -150,3 +150,5 @@
 
 
 </html>
+<script src="js/funciones.js"></script>
+<script src="busqueda_real.js"></script>
