@@ -2,6 +2,7 @@
 <html lang="en">
 <header>
 <?php require_once './assets/library/librerias.php' ?>
+<link rel="stylesheet" href="./css/styles.css">
 </header>
 
 <body class="grid-container">
